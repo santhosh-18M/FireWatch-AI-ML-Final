@@ -1,0 +1,13 @@
+{
+  "experiment": "full_fusion",
+  "feature_count": 34,
+  "accuracy": 0.8655601659751038,
+  "balanced_accuracy": 0.663313509694243,
+  "macro_f1": 0.6817387148580987,
+  "industrial_precision": 0.52,
+  "industrial_recall": 0.22807017543859648,
+  "industrial_f1": 0.3170731707317073,
+  "natural_f1": 0.9255455712451861,
+  "other_f1": 0.8025974025974026,
+  "training_seconds": 10.807801599999948
+}

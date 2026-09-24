@@ -1,0 +1,62 @@
+{
+  "input_file": "D:\\FireWatch_ML_Final\\data\\processed\\firms_master_2022_2024.parquet",
+  "output_file": "D:\\FireWatch_ML_Final\\data\\processed\\firms_with_temporal_2022_2024.parquet",
+  "rows": 1723639,
+  "radius_km": 1.0,
+  "maximum_history_days": 30,
+  "causal_rule": "Only observations with timestamps strictly earlier than the current observation are used.",
+  "current_observation_excluded": true,
+  "future_observations_excluded": true,
+  "rows_with_prior_detection_30d": 787525,
+  "rows_without_prior_detection_30d": 936114,
+  "percent_with_prior_detection_30d": 45.68967167718995,
+  "temporal_feature_summary": {
+    "detections_3d": {
+      "mean": 1.2957730708112314,
+      "median": 0.0,
+      "p95": 7.0,
+      "max": 62
+    },
+    "detections_7d": {
+      "mean": 2.8341062136561077,
+      "median": 0.0,
+      "p95": 17.0,
+      "max": 130
+    },
+    "detections_10d": {
+      "mean": 3.673246544084927,
+      "median": 0.0,
+      "p95": 23.0,
+      "max": 175
+    },
+    "detections_30d": {
+      "mean": 9.967689289926719,
+      "median": 0.0,
+      "p95": 68.0,
+      "p99": 170.0,
+      "max": 457
+    },
+    "distinct_active_days_30d": {
+      "mean": 3.0944246446036554,
+      "median": 0.0,
+      "p95": 24.0,
+      "p99": 29.0,
+      "max": 31
+    },
+    "active_days_fraction_30d": {
+      "mean": 0.09982015192508698,
+      "median": 0.0,
+      "p95": 0.774193525314331,
+      "max": 1.0
+    }
+  },
+  "notes": [
+    "Temporal features are factual historical measurements, not class labels.",
+    "No persistence class was assigned.",
+    "No source-class labels were assigned.",
+    "The current observation is inserted into history only after its own features are calculated.",
+    "Only previous detections within 1 km and the previous 30 days are considered.",
+    "active_days_fraction_30d divides distinct historical calendar dates by 31 because a rolling 30x24-hour interval can touch parts of 31 calendar dates.",
+    "2025 holdout data was not accessed."
+  ]
+}

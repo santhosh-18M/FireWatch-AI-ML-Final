@@ -1,0 +1,127 @@
+{
+  "dataset": "D:\\FireWatch_ML_Final\\data\\raw\\firms_2022_2024\\fire_archive_SV-C2_799789.csv",
+  "rows": 1723639,
+  "columns": 17,
+  "date_range": {
+    "min": "2022-01-01 00:00:00",
+    "max": "2024-12-31 00:00:00"
+  },
+  "year_counts": {
+    "2022": 591594,
+    "2023": 579733,
+    "2024": 552312
+  },
+  "missing_values": {
+    "latitude": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "longitude": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "brightness": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "scan": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "track": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "acq_date": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "acq_time": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "satellite": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "instrument": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "confidence": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "version": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "bright_t31": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "frp": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "daynight": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "type": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "year": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "month": {
+      "count": 0,
+      "percent": 0.0
+    }
+  },
+  "duplicates": {
+    "exact_rows": 0,
+    "event_key_duplicates": 1
+  },
+  "coordinate_validation": {
+    "invalid_latitude": 0,
+    "invalid_longitude": 0,
+    "latitude_min": 8.04682,
+    "latitude_max": 35.11223,
+    "longitude_min": 68.50764,
+    "longitude_max": 97.21292
+  },
+  "satellite_distribution": {
+    "SNPP": 1723639
+  },
+  "instrument_distribution": {
+    "SNPP": 1723639
+  },
+  "daynight_distribution": {
+    "D": 1229082,
+    "N": 494557
+  },
+  "type_distribution": {
+    "0": 1513192,
+    "2": 207092,
+    "3": 3337,
+    "1": 18
+  },
+  "confidence_distribution": {
+    "n": 1371444,
+    "l": 306117,
+    "h": 46078
+  },
+  "numeric_checks": {
+    "brightness_le_zero": 0,
+    "bright_t31_le_zero": 0,
+    "frp_negative": 0,
+    "scan_le_zero": 0,
+    "track_le_zero": 0
+  },
+  "acquisition_time": {
+    "invalid_count": 0
+  }
+}

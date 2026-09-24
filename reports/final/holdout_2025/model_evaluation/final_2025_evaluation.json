@@ -1,0 +1,125 @@
+{
+  "evaluation_status": "FINAL_ONE_TIME_2025_TEMPORAL_HOLDOUT",
+  "model_version": "source_classifier_v1_final",
+  "freeze_status": "LOCKED",
+  "evaluation_rows": 20000,
+  "feature_count": 26,
+  "architecture": "FIRMS + causal temporal + OSM",
+  "label_counts": {
+    "industrial_fire_candidate": 414,
+    "natural_vegetation_fire": 17073,
+    "other_uncertain": 2513
+  },
+  "raw_catboost": {
+    "accuracy": 0.89465,
+    "balanced_accuracy": 0.801888156167674,
+    "macro_f1": 0.7445357736393278,
+    "log_loss": 0.3284638553757168,
+    "multiclass_brier": 0.17593774125722947,
+    "per_class": {
+      "industrial_fire_candidate": {
+        "precision": 0.5620300751879699,
+        "recall": 0.7222222222222222,
+        "f1": 0.6321353065539113,
+        "support": 414
+      },
+      "natural_vegetation_fire": {
+        "precision": 0.9715419430838862,
+        "recall": 0.9178234639489252,
+        "f1": 0.9439190410216252,
+        "support": 17073
+      },
+      "other_uncertain": {
+        "precision": 0.5762204252770291,
+        "recall": 0.7656187823318743,
+        "f1": 0.657552973342447,
+        "support": 2513
+      }
+    },
+    "industrial_pr_auc": 0.7452560211259895,
+    "ece_top_label_10_bins": 0.04319387536533114
+  },
+  "calibrated_argmax": {
+    "accuracy": 0.9047,
+    "balanced_accuracy": 0.7766186732958525,
+    "macro_f1": 0.7602381049973826,
+    "log_loss": 0.30241532366342105,
+    "multiclass_brier": 0.15572035869796422,
+    "per_class": {
+      "industrial_fire_candidate": {
+        "precision": 0.6804123711340206,
+        "recall": 0.6376811594202898,
+        "f1": 0.6583541147132169,
+        "support": 414
+      },
+      "natural_vegetation_fire": {
+        "precision": 0.968018483614033,
+        "recall": 0.9325250395361097,
+        "f1": 0.9499403341288782,
+        "support": 17073
+      },
+      "other_uncertain": {
+        "precision": 0.6031595576619273,
+        "recall": 0.759649820931158,
+        "f1": 0.6724198661500528,
+        "support": 2513
+      }
+    },
+    "industrial_pr_auc": 0.739824466307414,
+    "ece_top_label_10_bins": 0.013443495877447285
+  },
+  "frozen_industrial_threshold_0_27": {
+    "threshold": 0.27,
+    "true_positive": 313,
+    "false_positive": 350,
+    "false_negative": 101,
+    "true_negative": 19236,
+    "precision": 0.4720965309200603,
+    "recall": 0.7560386473429952,
+    "f1": 0.5812441968430827,
+    "predicted_industrial": 663
+  },
+  "raw_confusion_matrix": [
+    [
+      299,
+      21,
+      94
+    ],
+    [
+      82,
+      15670,
+      1321
+    ],
+    [
+      151,
+      438,
+      1924
+    ]
+  ],
+  "calibrated_confusion_matrix": [
+    [
+      264,
+      24,
+      126
+    ],
+    [
+      22,
+      15921,
+      1130
+    ],
+    [
+      102,
+      502,
+      1909
+    ]
+  ],
+  "evaluation_notes": [
+    "The 2025 source labels are contextual weak labels, not confirmed real-world fire-cause ground truth.",
+    "The evaluation sample was deliberately diversity/stratification sampled and does not estimate natural 2025 class prevalence.",
+    "WorldCover 2021 is a static land-cover reference used for 2025 label evidence.",
+    "WRI/GEM industrial references provide facility-proximity evidence but do not prove the cause of a FIRMS thermal anomaly.",
+    "The 0.27 industrial operating threshold was frozen during development and was not optimized on the 2025 holdout.",
+    "No model retraining, feature selection, hyperparameter tuning, preprocessing fitting, or label-policy changes were performed using these 2025 results."
+  ],
+  "post_evaluation_rule": "Do not modify and re-evaluate this model on the same 2025 holdout as a new final result."
+}

@@ -1,0 +1,13 @@
+{
+  "experiment": "firms_only",
+  "feature_count": 14,
+  "accuracy": 0.6688796680497925,
+  "balanced_accuracy": 0.5029645258842932,
+  "macro_f1": 0.4924189839432336,
+  "industrial_precision": 0.12371134020618557,
+  "industrial_recall": 0.21052631578947367,
+  "industrial_f1": 0.15584415584415584,
+  "natural_f1": 0.7822105951602355,
+  "other_f1": 0.5392022008253095,
+  "training_seconds": 5.505666499999961
+}

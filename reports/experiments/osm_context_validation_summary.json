@@ -1,0 +1,129 @@
+{
+  "sample_size": 10000,
+  "random_state": 42,
+  "sample_period": {
+    "start": "2022-01-01 06:51:00",
+    "end": "2024-12-31 20:29:00"
+  },
+  "osm_feature_counts": {
+    "industrial": 159081,
+    "vegetation": 247569
+  },
+  "industrial_distance_km": {
+    "min": 0.004298278816957073,
+    "p01": 0.11293384811577857,
+    "p05": 0.3009680320463321,
+    "p25": 2.0941956596865046,
+    "median": 5.4506161554991746,
+    "p75": 10.79086076029877,
+    "p90": 17.300381499746422,
+    "p95": 22.44491072212525,
+    "p99": 32.43384604316314,
+    "max": 302.58433959449536,
+    "mean": 7.568980822447443
+  },
+  "vegetation_distance_km": {
+    "min": 0.0364017267208274,
+    "p01": 0.29678593409331017,
+    "p05": 0.8305306589394646,
+    "p25": 2.768256646405076,
+    "median": 5.526462100645999,
+    "p75": 9.812944482966692,
+    "p90": 15.418074425182066,
+    "p95": 19.452936644819733,
+    "p99": 28.676583722605407,
+    "max": 53.66002926177792,
+    "mean": 7.247013606353957
+  },
+  "industrial_proximity": {
+    "within_0.5km": {
+      "count": 856,
+      "percentage": 8.559999999999999
+    },
+    "within_1km": {
+      "count": 1487,
+      "percentage": 14.87
+    },
+    "within_1.5km": {
+      "count": 1972,
+      "percentage": 19.72
+    },
+    "within_3km": {
+      "count": 3225,
+      "percentage": 32.25
+    },
+    "within_5km": {
+      "count": 4734,
+      "percentage": 47.339999999999996
+    },
+    "within_10km": {
+      "count": 7198,
+      "percentage": 71.98
+    },
+    "within_25km": {
+      "count": 9662,
+      "percentage": 96.61999999999999
+    }
+  },
+  "vegetation_proximity": {
+    "within_0.5km": {
+      "count": 232,
+      "percentage": 2.32
+    },
+    "within_1km": {
+      "count": 651,
+      "percentage": 6.510000000000001
+    },
+    "within_1.5km": {
+      "count": 1155,
+      "percentage": 11.55
+    },
+    "within_3km": {
+      "count": 2721,
+      "percentage": 27.21
+    },
+    "within_5km": {
+      "count": 4597,
+      "percentage": 45.97
+    },
+    "within_10km": {
+      "count": 7572,
+      "percentage": 75.72
+    },
+    "within_25km": {
+      "count": 9803,
+      "percentage": 98.03
+    }
+  },
+  "nearest_industrial_categories": {
+    "power_substation": 3971,
+    "fuel_facility": 1540,
+    "industrial_landuse": 1532,
+    "mining": 1320,
+    "power_plant": 329,
+    "industrial_chimney": 310,
+    "industrial_tag": 301,
+    "storage": 269,
+    "power_generation": 263,
+    "manufacturing": 132,
+    "kiln": 33
+  },
+  "nearest_vegetation_categories": {
+    "forest_woodland": 4709,
+    "farmland": 1829,
+    "scrub": 1312,
+    "forest": 815,
+    "grassland": 588,
+    "orchard": 339,
+    "agricultural": 321,
+    "heath": 48,
+    "grass_meadow": 39
+  },
+  "methodology_notes": [
+    "This validation uses 10,000 reproducibly sampled FIRMS observations from 2022-2024.",
+    "OSM way locations currently use representative mean-node points.",
+    "Distances therefore represent distance to extracted OSM representative points and must not be described as exact distance to polygon boundaries.",
+    "OSM context is evidence only and does not create fire labels.",
+    "2025 FIRMS holdout remains untouched."
+  ]
+}

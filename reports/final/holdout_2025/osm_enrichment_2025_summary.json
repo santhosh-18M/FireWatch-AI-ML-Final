@@ -1,0 +1,185 @@
+{
+  "stage": "2025_frozen_osm_enrichment",
+  "rows": 646376,
+  "osm_feature_counts": {
+    "all_industrial": 159081,
+    "strong_industrial": 48963,
+    "supporting_industrial": 73998,
+    "weak_infrastructure": 36120,
+    "vegetation": 247569
+  },
+  "distance_summaries": {
+    "distance_to_strong_industrial_km": {
+      "min": 0.0022811086382716894,
+      "p01": 0.15305756777524948,
+      "p05": 0.4318847060203552,
+      "p25": 3.6988340616226196,
+      "median": 9.746075630187988,
+      "p75": 18.31660032272339,
+      "p90": 28.705891609191895,
+      "p95": 36.096877098083496,
+      "p99": 51.583529472351074,
+      "max": 294.0827941894531,
+      "mean": 12.714265823364258
+    },
+    "distance_to_supporting_industrial_km": {
+      "min": 0.00021216808818280697,
+      "p01": 0.21173633635044098,
+      "p05": 1.2154819965362549,
+      "p25": 8.367003440856934,
+      "median": 18.734619140625,
+      "p75": 33.75670051574707,
+      "p90": 50.57891654968262,
+      "p95": 59.530192375183105,
+      "p99": 76.94400596618652,
+      "max": 399.37347412109375,
+      "mean": 23.17281150817871
+    },
+    "distance_to_infrastructure_km": {
+      "min": 0.0027979305014014244,
+      "p01": 0.26859357953071594,
+      "p05": 0.7640086561441422,
+      "p25": 3.6489087343215942,
+      "median": 7.634187698364258,
+      "p75": 13.410231351852417,
+      "p90": 20.47198486328125,
+      "p95": 25.62754487991333,
+      "p99": 36.56129455566406,
+      "max": 399.294921875,
+      "mean": 9.650840759277344
+    },
+    "distance_to_vegetation_km": {
+      "min": 0.006497446913272142,
+      "p01": 0.32356296479701996,
+      "p05": 0.8844539225101471,
+      "p25": 2.899180829524994,
+      "median": 5.886448383331299,
+      "p75": 10.352037906646729,
+      "p90": 15.8626127243042,
+      "p95": 20.027249813079834,
+      "p99": 29.528358936309814,
+      "max": 63.534366607666016,
+      "mean": 7.56657600402832
+    }
+  },
+  "proximity_summaries": {
+    "distance_to_strong_industrial_km": {
+      "within_1km": {
+        "count": 72445,
+        "percentage": 11.20787281706004
+      },
+      "within_1.5km": {
+        "count": 95973,
+        "percentage": 14.847859450227114
+      },
+      "within_3km": {
+        "count": 142756,
+        "percentage": 22.085597237521196
+      },
+      "within_5km": {
+        "count": 197042,
+        "percentage": 30.484114509202076
+      },
+      "within_10km": {
+        "count": 329320,
+        "percentage": 50.948673836899886
+      },
+      "within_25km": {
+        "count": 555494,
+        "percentage": 85.93976261494858
+      }
+    },
+    "distance_to_supporting_industrial_km": {
+      "within_1km": {
+        "count": 26752,
+        "percentage": 4.138767528497345
+      },
+      "within_1.5km": {
+        "count": 38489,
+        "percentage": 5.954583709791205
+      },
+      "within_3km": {
+        "count": 67630,
+        "percentage": 10.462950357067713
+      },
+      "within_5km": {
+        "count": 101112,
+        "percentage": 15.642907533695558
+      },
+      "within_10km": {
+        "count": 190003,
+        "percentage": 29.39511986831194
+      },
+      "within_25km": {
+        "count": 399730,
+        "percentage": 61.84171442008986
+      }
+    },
+    "distance_to_infrastructure_km": {
+      "within_1km": {
+        "count": 42642,
+        "percentage": 6.597089000829238
+      },
+      "within_1.5km": {
+        "count": 65338,
+        "percentage": 10.1083579835885
+      },
+      "within_3km": {
+        "count": 132295,
+        "percentage": 20.467189375843162
+      },
+      "within_5km": {
+        "count": 219676,
+        "percentage": 33.98579155166652
+      },
+      "within_10km": {
+        "count": 397768,
+        "percentage": 61.53817592237335
+      },
+      "within_25km": {
+        "count": 611061,
+        "percentage": 94.53646174981745
+      }
+    },
+    "distance_to_vegetation_km": {
+      "within_1km": {
+        "count": 38536,
+        "percentage": 5.961855019369531
+      },
+      "within_1.5km": {
+        "count": 68351,
+        "percentage": 10.574495340173522
+      },
+      "within_3km": {
+        "count": 167873,
+        "percentage": 25.971416017921456
+      },
+      "within_5km": {
+        "count": 281283,
+        "percentage": 43.51693132170749
+      },
+      "within_10km": {
+        "count": 475334,
+        "percentage": 73.53831206604205
+      },
+      "within_25km": {
+        "count": 632346,
+        "percentage": 97.82943673651249
+      }
+    }
+  },
+  "osm_context_relation": {
+    "no_close_context": 387002,
+    "vegetation_context": 116618,
+    "strong_industrial_context": 91501,
+    "mixed_context": 51255
+  },
+  "model_used": false,
+  "source_labels_generated": false,
+  "osm_policy_changed": false,
+  "notes": [
+    "Exact frozen OSM context categories from development were reused.",
+    "OSM evidence is contextual and does not itself prove a fire source.",
+    "OSM way locations remain representative points rather than exact polygon boundaries."
+  ]
+}

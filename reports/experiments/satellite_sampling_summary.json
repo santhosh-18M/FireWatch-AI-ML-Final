@@ -1,0 +1,59 @@
+{
+  "source_dataset_rows": 1723639,
+  "target_sample_size": 20000,
+  "actual_sample_size": 20000,
+  "random_state": 42,
+  "grid_size_degrees": 0.25,
+  "source_geographic_cells": 4469,
+  "sample_geographic_cells": 4469,
+  "geographic_cell_coverage_percentage": 100.0,
+  "frp_sampling_thresholds": {
+    "q50": 3.5799999237060547,
+    "q90": 11.119999885559082,
+    "q95": 16.799999237060547,
+    "q99": 49.459999084472656
+  },
+  "sample_year_distribution": {
+    "2023": 6697,
+    "2024": 6670,
+    "2022": 6633
+  },
+  "sample_context_distribution": {
+    "no_close_context": 8217,
+    "vegetation_context": 4600,
+    "strong_industrial_context": 3845,
+    "mixed_context": 3338
+  },
+  "sample_temporal_distribution": {
+    "no_prior": 8701,
+    "limited_prior": 4562,
+    "repeated_low_active_days": 3706,
+    "high_recurrence": 3031
+  },
+  "sample_frp_distribution": {
+    "low": 6718,
+    "moderate": 6062,
+    "high": 2930,
+    "very_high": 2763,
+    "extreme": 1527
+  },
+  "sampling_reason_distribution": {
+    "evidence_stratum": 11627,
+    "geographic_coverage": 4467,
+    "diversity_fill": 3906
+  },
+  "sentinel_policy": {
+    "lookback_days": 14,
+    "future_imagery_allowed": false,
+    "reason": "Prevent temporal leakage by using only Sentinel observations acquired at or before the FIRMS timestamp."
+  },
+  "methodology_notes": [
+    "This is a satellite evidence sampling dataset, not a training dataset.",
+    "Sampling intentionally covers multiple years, OSM contexts, temporal behaviors, thermal intensities and geographic cells.",
+    "Sampling groups are not source labels.",
+    "Latitude/longitude and grid IDs are sampling/GIS metadata and are not automatically model predictors.",
+    "Sentinel imagery will use a past-only 14-day search window.",
+    "Missing satellite observations will be represented explicitly rather than replaced with fabricated values.",
+    "2025 FIRMS holdout was not accessed."
+  ]
+}

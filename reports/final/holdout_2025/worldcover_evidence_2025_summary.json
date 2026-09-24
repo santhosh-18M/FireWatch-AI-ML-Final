@@ -1,0 +1,48 @@
+{
+  "stage": "2025_worldcover_merge_validation",
+  "evaluation_rows": 20000,
+  "export_files": 20,
+  "export_rows": 20000,
+  "unique_export_observation_ids": 20000,
+  "duplicate_export_rows": 0,
+  "missing_ids": 0,
+  "unexpected_ids": 0,
+  "point_evidence_available": 20000,
+  "point_evidence_coverage_pct": 100.0,
+  "buffer_evidence_available": 20000,
+  "buffer_evidence_coverage_pct": 100.0,
+  "worldcover_point_distribution": {
+    "10": 6687,
+    "20": 981,
+    "30": 2549,
+    "40": 7485,
+    "50": 1076,
+    "60": 1099,
+    "80": 118,
+    "90": 5
+  },
+  "worldcover_dominant_100m_distribution": {
+    "10": 6780,
+    "20": 863,
+    "30": 2333,
+    "40": 7710,
+    "50": 1107,
+    "60": 1112,
+    "80": 90,
+    "90": 5
+  },
+  "dataset": "ESA_WorldCover_2021_v200",
+  "buffer_meters": 100,
+  "scale_meters": 10,
+  "source_labels_generated": false,
+  "model_executed": false,
+  "output_parquet": "D:\\FireWatch_ML_Final\\data\\processed\\holdout_2025\\worldcover_evidence_2025.parquet",
+  "output_csv": "D:\\FireWatch_ML_Final\\data\\processed\\holdout_2025\\worldcover_evidence_2025.csv",
+  "notes": [
+    "WorldCover 2021 is static independent land-cover reference evidence.",
+    "WorldCover class does not by itself confirm the cause of a 2025 FIRMS anomaly.",
+    "Dominant 100 m class was derived from the exported class fractions.",
+    "No model predictions were generated during this step.",
+    "No source labels were generated during this step."
+  ]
+}

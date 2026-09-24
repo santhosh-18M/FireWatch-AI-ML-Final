@@ -1,0 +1,210 @@
+{
+  "input_file": "D:\\FireWatch_ML_Final\\data\\processed\\firms_with_temporal_2022_2024.parquet",
+  "output_file": "D:\\FireWatch_ML_Final\\data\\processed\\firms_with_osm_2022_2024.parquet",
+  "rows": 1723639,
+  "columns": 80,
+  "osm_feature_counts": {
+    "all_industrial": 159081,
+    "strong_industrial": 48963,
+    "supporting_industrial": 73998,
+    "weak_infrastructure": 36120,
+    "vegetation_agriculture": 247569
+  },
+  "distance_summaries": {
+    "distance_to_strong_industrial_km": {
+      "min": 0.0014129068003967404,
+      "p01": 0.14947524875402451,
+      "p05": 0.4228799968957902,
+      "p25": 3.35637629032135,
+      "median": 9.019076347351074,
+      "p75": 17.284695625305176,
+      "p90": 27.563413619995117,
+      "p95": 34.90933876037594,
+      "p99": 50.35627487182613,
+      "max": 303.9059143066406,
+      "mean": 12.063477516174316
+    },
+    "distance_to_supporting_industrial_km": {
+      "min": 0.0004230265330988914,
+      "p01": 0.19768620818853377,
+      "p05": 1.1599785208702087,
+      "p25": 7.853343963623047,
+      "median": 17.165443420410156,
+      "p75": 31.140165328979492,
+      "p90": 47.79424209594726,
+      "p95": 57.924382781982416,
+      "p99": 76.4798631286621,
+      "max": 407.661376953125,
+      "mean": 21.728666305541992
+    },
+    "distance_to_infrastructure_km": {
+      "min": 0.003563319332897663,
+      "p01": 0.2678964823484421,
+      "p05": 0.729540878534317,
+      "p25": 3.2726171016693115,
+      "median": 6.913097381591797,
+      "p75": 12.709052085876465,
+      "p90": 19.782627105712884,
+      "p95": 25.23961048126218,
+      "p99": 36.6054278564452,
+      "max": 407.6267395019531,
+      "mean": 9.152288436889648
+    },
+    "distance_to_vegetation_km": {
+      "min": 0.00048413206241093576,
+      "p01": 0.3045200300216675,
+      "p05": 0.8394085168838503,
+      "p25": 2.792199730873108,
+      "median": 5.687573432922363,
+      "p75": 10.014925956726074,
+      "p90": 15.376858901977538,
+      "p95": 19.306769943237292,
+      "p99": 28.38064903259276,
+      "max": 77.88448333740234,
+      "mean": 7.308750629425049
+    }
+  },
+  "proximity_summaries": {
+    "distance_to_strong_industrial_km": {
+      "within_1km": {
+        "count": 202157,
+        "percentage": 11.72849999332807
+      },
+      "within_1.5km": {
+        "count": 270843,
+        "percentage": 15.713441155601608
+      },
+      "within_3km": {
+        "count": 402405,
+        "percentage": 23.346245936649147
+      },
+      "within_5km": {
+        "count": 562577,
+        "percentage": 32.638911048079095
+      },
+      "within_10km": {
+        "count": 926516,
+        "percentage": 53.75348318296349
+      },
+      "within_25km": {
+        "count": 1504829,
+        "percentage": 87.30534642114736
+      }
+    },
+    "distance_to_supporting_industrial_km": {
+      "within_1km": {
+        "count": 74661,
+        "percentage": 4.331591475941308
+      },
+      "within_1.5km": {
+        "count": 108121,
+        "percentage": 6.272833232480815
+      },
+      "within_3km": {
+        "count": 191780,
+        "percentage": 11.12645977492967
+      },
+      "within_5km": {
+        "count": 287794,
+        "percentage": 16.696883744217903
+      },
+      "within_10km": {
+        "count": 542569,
+        "percentage": 31.47811113580048
+      },
+      "within_25km": {
+        "count": 1130708,
+        "percentage": 65.60004734169974
+      }
+    },
+    "distance_to_infrastructure_km": {
+      "within_1km": {
+        "count": 122194,
+        "percentage": 7.089303502647597
+      },
+      "within_1.5km": {
+        "count": 190516,
+        "percentage": 11.053126553762127
+      },
+      "within_3km": {
+        "count": 394954,
+        "percentage": 22.913962842567383
+      },
+      "within_5km": {
+        "count": 650343,
+        "percentage": 37.730812542533556
+      },
+      "within_10km": {
+        "count": 1117091,
+        "percentage": 64.81003272727062
+      },
+      "within_25km": {
+        "count": 1634642,
+        "percentage": 94.83667983841164
+      }
+    },
+    "distance_to_vegetation_km": {
+      "within_1km": {
+        "count": 110609,
+        "percentage": 6.417179003259964
+      },
+      "within_1.5km": {
+        "count": 194279,
+        "percentage": 11.271443730386698
+      },
+      "within_3km": {
+        "count": 466635,
+        "percentage": 27.072664287591543
+      },
+      "within_5km": {
+        "count": 775696,
+        "percentage": 45.003391081311115
+      },
+      "within_10km": {
+        "count": 1291719,
+        "percentage": 74.94138853901542
+      },
+      "within_25km": {
+        "count": 1691771,
+        "percentage": 98.15112097138669
+      }
+    }
+  },
+  "osm_context_relation": {
+    "no_close_context": 1002799,
+    "vegetation_context": 318435,
+    "strong_industrial_context": 254205,
+    "mixed_context": 148200
+  },
+  "nearest_strong_industrial_categories": {
+    "industrial_landuse": 827250,
+    "mining": 421682,
+    "power_plant": 214946,
+    "industrial_tag": 160566,
+    "manufacturing": 74661,
+    "kiln": 23205,
+    "oil_gas": 1329
+  },
+  "nearest_vegetation_categories": {
+    "forest_woodland": 827866,
+    "farmland": 307978,
+    "scrub": 223653,
+    "forest": 136280,
+    "grassland": 101822,
+    "orchard": 56541,
+    "agricultural": 53396,
+    "heath": 8534,
+    "grass_meadow": 7435,
+    "vineyard": 134
+  },
+  "methodology_notes": [
+    "OSM context is evidence only and does not create source/fire labels.",
+    "Industrial OSM evidence was separated into strong, supporting and weak infrastructure channels.",
+    "Power substations and fuel facilities are not treated as equivalent to industrial plants or industrial land.",
+    "OSM ways currently use representative mean-node points for scalable proximity analysis.",
+    "Distances therefore must not be described as exact polygon-boundary distances.",
+    "Latitude and longitude remain available for GIS and spatial validation but should not automatically become model predictors.",
+    "No labels were generated in this stage.",
+    "2025 FIRMS holdout was not accessed."
+  ]
+}

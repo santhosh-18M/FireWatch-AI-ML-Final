@@ -1,0 +1,42 @@
+{
+  "project": "firewatch-ai-sih",
+  "input_file": "D:\\FireWatch_ML_Final\\data\\satellite\\sentinel_sampling_2022_2024.parquet",
+  "batch_size": 500,
+  "random_state": 42,
+  "dataset": "COPERNICUS/S2_SR_HARMONIZED",
+  "lookback_days": 14,
+  "future_imagery_allowed": false,
+  "max_scene_cloud_percentage": 80,
+  "cloud_mask": "Sentinel-2 SCL",
+  "buffer_meters": 100,
+  "reduce_scale_meters": 20,
+  "bands": [
+    "B4",
+    "B8",
+    "B11",
+    "B12"
+  ],
+  "indices": [
+    "NDVI",
+    "NBR",
+    "NDMI"
+  ],
+  "export": {
+    "description": "firewatch_sentinel_validation_500",
+    "drive_folder": "FireWatch_Sentinel",
+    "filename_prefix": "firewatch_sentinel_validation_500",
+    "format": "CSV"
+  },
+  "task": {
+    "id": "52TBHQREO4OLHT5PCNH32VT7",
+    "state": "READY"
+  },
+  "notes": [
+    "Validation batch only. Do not scale to 20,000 until the exported 500-row result has been validated.",
+    "Sentinel imagery is restricted to the 14 days at or before each FIRMS observation.",
+    "SCL masking is used instead of depending on QA60 availability.",
+    "Spectral values are contextual evidence and are not fire labels.",
+    "Missing satellite evidence is represented explicitly.",
+    "2025 FIRMS holdout was not accessed."
+  ]
+}

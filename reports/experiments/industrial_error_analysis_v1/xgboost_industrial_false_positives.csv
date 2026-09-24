@@ -1,0 +1,8 @@
+observation_id,latitude,longitude,spatial_group,actual_class_id,actual_class,predicted_class_id,predicted_class,correct,prob_industrial_fire_candidate,prob_natural_vegetation_fire,prob_other_uncertain,max_probability
+FW_01129842,19.96279,79.33357,39_158,2,other_uncertain,0,industrial_fire_candidate,False,0.9885422,0.001512248,0.009945596,0.9885422
+FW_00339116,19.95736,79.33961,39_158,1,natural_vegetation_fire,0,industrial_fire_candidate,False,0.9460734,0.01627128,0.03765525,0.9460734
+FW_01663781,24.14803,86.33076,48_172,2,other_uncertain,0,industrial_fire_candidate,False,0.5552559,0.2949434,0.1498007,0.5552559
+FW_00567093,19.96305,79.3309,39_158,2,other_uncertain,0,industrial_fire_candidate,False,0.8861595,0.00637264,0.107467875,0.8861595
+FW_00267740,24.44654,82.95349,48_165,2,other_uncertain,0,industrial_fire_candidate,False,0.49857825,0.31772092,0.18370079,0.49857825
+FW_01110025,22.20169,84.57687,44_169,2,other_uncertain,0,industrial_fire_candidate,False,0.8887304,0.0096699335,0.10159969,0.8887304
+FW_00267742,24.45044,82.95667,48_165,2,other_uncertain,0,industrial_fire_candidate,False,0.5147792,0.27380508,0.21141568,0.5147792

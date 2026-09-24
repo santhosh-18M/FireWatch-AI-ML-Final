@@ -1,0 +1,37 @@
+{
+  "model": "xgboost",
+  "accuracy": 0.8738589211618257,
+  "balanced_accuracy": 0.645447531146354,
+  "macro_f1": 0.6636653026161538,
+  "weighted_f1": 0.863139883490196,
+  "industrial_precision": 0.5625,
+  "industrial_recall": 0.15789473684210525,
+  "industrial_f1": 0.2465753424657534,
+  "natural_precision": 0.92,
+  "natural_recall": 0.9460154241645244,
+  "natural_f1": 0.9328263624841572,
+  "other_precision": 0.7917737789203085,
+  "other_recall": 0.8324324324324325,
+  "other_f1": 0.8115942028985508,
+  "training_seconds": 5.189863600000024,
+  "per_class": {
+    "industrial_fire_candidate": {
+      "precision": 0.5625,
+      "recall": 0.15789473684210525,
+      "f1": 0.2465753424657534,
+      "support": 57
+    },
+    "natural_vegetation_fire": {
+      "precision": 0.92,
+      "recall": 0.9460154241645244,
+      "f1": 0.9328263624841572,
+      "support": 778
+    },
+    "other_uncertain": {
+      "precision": 0.7917737789203085,
+      "recall": 0.8324324324324325,
+      "f1": 0.8115942028985508,
+      "support": 370
+    }
+  }
+}

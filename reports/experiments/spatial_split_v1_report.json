@@ -1,0 +1,50 @@
+{
+  "stage": "spatial_split_v1_v2",
+  "strategy": "randomized whole-spatial-group search with class-balance objective",
+  "random_state": 42,
+  "trials": 5000,
+  "valid_trials": 1504,
+  "best_score": 0.03934398057713324,
+  "total_rows": 7901,
+  "spatial_groups": 1214,
+  "target_fractions": {
+    "train": 0.7,
+    "validation": 0.15,
+    "calibration": 0.15
+  },
+  "actual_rows": {
+    "train": 5524,
+    "validation": 1205,
+    "calibration": 1172
+  },
+  "class_by_split": {
+    "industrial_fire_candidate": {
+      "train": 287,
+      "validation": 57,
+      "calibration": 57
+    },
+    "natural_vegetation_fire": {
+      "train": 3486,
+      "validation": 778,
+      "calibration": 736
+    },
+    "other_uncertain": {
+      "train": 1751,
+      "validation": 370,
+      "calibration": 379
+    }
+  },
+  "groups_by_split": {
+    "train": 860,
+    "validation": 182,
+    "calibration": 172
+  },
+  "leakage": {
+    "spatial_group_overlap": 0,
+    "train_validation": 0,
+    "train_calibration": 0,
+    "validation_calibration": 0
+  },
+  "model_training_performed": false,
+  "2025_holdout_accessed": false
+}

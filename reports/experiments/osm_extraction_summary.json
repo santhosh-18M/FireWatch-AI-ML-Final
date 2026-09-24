@@ -1,0 +1,49 @@
+{
+  "filtered_pbf": "D:\\FireWatch_ML_Final\\data\\osm\\filtered\\firewatch_context.osm.pbf",
+  "filtered_pbf_size_mb": 49.251315116882324,
+  "runtime_seconds": 951.0895700454712,
+  "objects_read": {
+    "nodes": 9349340,
+    "ways": 344278,
+    "relations": 0
+  },
+  "matching_objects": {
+    "nodes": 62358,
+    "ways": 344278
+  },
+  "industrial_features": 159081,
+  "vegetation_features": 247569,
+  "industrial_categories": {
+    "power_generation": 56758,
+    "industrial_landuse": 22545,
+    "fuel_facility": 19126,
+    "power_substation": 16994,
+    "mining": 11110,
+    "storage": 9931,
+    "industrial_chimney": 7309,
+    "manufacturing": 5695,
+    "industrial_tag": 5213,
+    "kiln": 2498,
+    "power_plant": 1865,
+    "oil_gas": 37
+  },
+  "vegetation_categories": {
+    "farmland": 106396,
+    "forest_woodland": 65633,
+    "grassland": 22784,
+    "scrub": 22249,
+    "orchard": 11746,
+    "forest": 8874,
+    "agricultural": 5835,
+    "grass_meadow": 3040,
+    "heath": 948,
+    "vineyard": 64
+  },
+  "methodology": [
+    "OSM provides contextual evidence, not ground-truth fire labels.",
+    "Industrial and vegetation/agricultural contexts are stored independently.",
+    "Ways use representative mean-node coordinates for scalable contextual proximity analysis.",
+    "Representative-point distance must not be described as exact polygon-boundary distance.",
+    "The 2025 FIRMS holdout was not used."
+  ]
+}

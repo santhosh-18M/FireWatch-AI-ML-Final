@@ -1,0 +1,66 @@
+{
+  "stage": "independent_industrial_spatial_matching",
+  "development_observations": 20000,
+  "eligible_reference_facilities": 6,
+  "reference_source": "Global Energy Monitor",
+  "reference_dataset": "Global Oil and Gas Extraction Tracker",
+  "distance_summary_km": {
+    "mean": 559.3121948940117,
+    "median": 536.6503486548784,
+    "p25": 327.97703756638253,
+    "p75": 786.5877716130514,
+    "p90": 981.669434174768,
+    "p95": 1047.2517950239508,
+    "p99": 1122.4193675465563,
+    "min": 2.7493040796325325,
+    "max": 1573.3842694514356
+  },
+  "threshold_counts": {
+    "1.0": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "2.0": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "3.0": {
+      "count": 3,
+      "percentage": 0.015
+    },
+    "5.0": {
+      "count": 8,
+      "percentage": 0.04
+    },
+    "10.0": {
+      "count": 27,
+      "percentage": 0.135
+    },
+    "25.0": {
+      "count": 75,
+      "percentage": 0.375
+    }
+  },
+  "nearest_reference_assignment_counts": {
+    "SSG/SSF Oil and Gas Asset (Rajasthan, India)": 6731,
+    "Ankleshwar Oil and Gas Field (Gujarat, India)": 4752,
+    "Hazarigaon Oil and Gas Field (India)": 4586,
+    "Kuthalam Oil and Gas Field (India)": 3177,
+    "Geleki Oil and Gas Field (Assam, India)": 396,
+    "Raageshwari Deep Gas Oil and Gas Field (Rajasthan, India)": 358
+  },
+  "methodology": {
+    "distance": "Haversine great-circle distance",
+    "spatial_index": "BallTree",
+    "distance_role": "Independent positive industrial reference evidence only.",
+    "non_match_interpretation": "No match does not imply natural or non-industrial."
+  },
+  "important_limitations": [
+    "Only six eligible onshore Indian oil/gas references are available in this source.",
+    "This source does not cover all industrial thermal facilities in India.",
+    "Approximate facility coordinates have greater positional uncertainty.",
+    "Distance to a facility does not itself prove that a FIRMS observation was caused by that facility."
+  ],
+  "labels_created": false,
+  "holdout_2025_accessed": false
+}

@@ -1,0 +1,64 @@
+{
+  "stage": "2025_frozen_independent_industrial_matching",
+  "evaluation_observations": 20000,
+  "frozen_reference_file": "D:\\FireWatch_ML_Final\\data\\labels\\industrial_reference\\combined_industrial_reference.parquet",
+  "frozen_reference_count": 403,
+  "reference_type_counts": {
+    "thermal_power_plant": 397,
+    "oil_gas_extraction": 6
+  },
+  "reference_source_counts": {
+    "WRI": 397,
+    "GEM": 6
+  },
+  "distance_km": {
+    "minimum": 0.011923009028738267,
+    "median": 51.88390895157946,
+    "mean": 60.609944662452676,
+    "p90": 120.23071451408978,
+    "p95": 148.23457975243676,
+    "p99": 195.495620899456
+  },
+  "threshold_coverage": {
+    "0.5": {
+      "count": 64,
+      "percentage": 0.32
+    },
+    "1.0": {
+      "count": 182,
+      "percentage": 0.91
+    },
+    "2.0": {
+      "count": 414,
+      "percentage": 2.07
+    },
+    "3.0": {
+      "count": 580,
+      "percentage": 2.9000000000000004
+    },
+    "5.0": {
+      "count": 869,
+      "percentage": 4.345000000000001
+    },
+    "10.0": {
+      "count": 1794,
+      "percentage": 8.97
+    },
+    "25.0": {
+      "count": 4462,
+      "percentage": 22.31
+    }
+  },
+  "close_matches_within_10km": 1794,
+  "methodology": {
+    "distance": "Haversine great-circle distance",
+    "spatial_index": "BallTree",
+    "reference_policy": "Frozen development combined industrial reference reused without modification.",
+    "label_created": false,
+    "interpretation": "Spatial proximity is independent industrial-context evidence and does not prove FIRMS anomaly cause."
+  },
+  "worldcover_already_prepared": true,
+  "source_labels_generated": false,
+  "model_executed": false,
+  "development_model_modified": false
+}

@@ -1,0 +1,71 @@
+{
+  "source_file": "D:\\FireWatch_ML_Final\\data\\raw\\firms_2022_2024\\fire_archive_SV-C2_799789.csv",
+  "output_file": "D:\\FireWatch_ML_Final\\data\\processed\\firms_master_2022_2024.parquet",
+  "raw_rows": 1723639,
+  "final_rows": 1723639,
+  "duplicates_removed": 0,
+  "date_min": "2022-01-01 06:50:00",
+  "date_max": "2024-12-31 20:32:00",
+  "year_counts": {
+    "2022": 591594,
+    "2023": 579733,
+    "2024": 552312
+  },
+  "confidence_counts": {
+    "n": 1371444,
+    "l": 306117,
+    "h": 46078
+  },
+  "daynight_counts": {
+    "D": 1229082,
+    "N": 494557
+  },
+  "type_counts": {
+    "0": 1513192,
+    "1": 18,
+    "2": 207092,
+    "3": 3337
+  },
+  "brightness_upper_bound_count": 51314,
+  "columns": [
+    "observation_id",
+    "latitude",
+    "longitude",
+    "acq_date",
+    "acq_time",
+    "acquired_at",
+    "year",
+    "month",
+    "day_of_year",
+    "hour",
+    "minute",
+    "brightness",
+    "bright_t31",
+    "frp",
+    "scan",
+    "track",
+    "confidence",
+    "daynight",
+    "type",
+    "confidence_code",
+    "daynight_code",
+    "brightness_t31_delta",
+    "log_frp",
+    "brightness_at_upper_bound",
+    "hour_sin",
+    "hour_cos",
+    "month_sin",
+    "month_cos",
+    "satellite",
+    "instrument",
+    "version"
+  ],
+  "notes": [
+    "Raw latitude and longitude are retained for GIS, spatial splitting, OSM and satellite lookup.",
+    "Latitude and longitude are not automatically intended as model predictors.",
+    "FIRMS type is retained as source metadata and is not the FireWatch source-class target.",
+    "Satellite and instrument are retained as provenance even though this archive contains only SNPP.",
+    "No source-class labels were generated in this stage.",
+    "No 2025 observations were used."
+  ]
+}

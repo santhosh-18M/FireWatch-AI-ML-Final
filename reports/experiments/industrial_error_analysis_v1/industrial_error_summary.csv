@@ -1,0 +1,4 @@
+model,actual_industrial,correct_industrial,missed_industrial,missed_as_other,missed_as_natural,mean_industrial_probability,median_industrial_probability,industrial_probability_ge_0_10,industrial_probability_ge_0_20,industrial_probability_ge_0_30,industrial_probability_ge_0_40,industrial_probability_ge_0_50,industrial_rank_1,industrial_rank_2,industrial_rank_3,predicted_industrial,industrial_false_positives
+random_forest,57,4,53,43,10,0.1876907937194428,0.1622215843229145,41,21,9,5,1,4,22,31,5,1
+xgboost,57,9,48,40,8,0.18178307998947368,0.03202034,22,18,12,10,7,9,26,22,16,7
+catboost,57,11,46,38,8,0.259231215319284,0.1809242600372629,39,27,20,13,10,11,27,19,22,11

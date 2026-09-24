@@ -1,0 +1,50 @@
+{
+  "stage": "independent_industrial_reference_build",
+  "source": "Global Energy Monitor",
+  "dataset": "Global Oil and Gas Extraction Tracker",
+  "release": "March 2026",
+  "global_field_rows": 7673,
+  "india_rows": 19,
+  "india_with_coordinates": 16,
+  "india_without_coordinates": 3,
+  "coordinates_outside_india_bounds": 0,
+  "reference_rows": 19,
+  "eligible_land_matching_rows": 6,
+  "eligible_exact_locations": 3,
+  "eligible_approximate_locations": 3,
+  "status_distribution": {
+    "operating": 17,
+    "in-development": 2
+  },
+  "onshore_offshore_distribution": {
+    "offshore": 11,
+    "onshore": 8
+  },
+  "location_accuracy_distribution": {
+    "approximate": 9,
+    "exact": 7,
+    "MISSING": 3
+  },
+  "eligible_status_distribution": {
+    "operating": 5,
+    "in-development": 1
+  },
+  "matching_policy": {
+    "requires_valid_coordinate": true,
+    "requires_onshore": true,
+    "accepted_status": [
+      "operating",
+      "in-development"
+    ],
+    "exact_and_approximate_retained": true
+  },
+  "important_limitations": [
+    "This reference does not represent every industrial facility in India.",
+    "Absence from the tracker must not be interpreted as non-industrial.",
+    "Approximate coordinates have greater spatial uncertainty than exact coordinates.",
+    "Offshore fields are retained for provenance but excluded from land-based matching.",
+    "This dataset represents oil/gas extraction and does not cover all power plants, steel plants, refineries, mines or other industries."
+  ],
+  "labels_created": false,
+  "holdout_2025_accessed": false
+}

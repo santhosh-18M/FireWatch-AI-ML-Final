@@ -1,0 +1,63 @@
+{
+  "stage": "worldcover_external_label_evidence",
+  "source": "ESA WorldCover 2021 v200",
+  "earth_engine_collection": "ESA/WorldCover/v200",
+  "resolution_m": 10,
+  "buffer_m": 100,
+  "sample_rows": 20000,
+  "batch_size": 5000,
+  "number_of_batches": 4,
+  "drive_folder": "FireWatch_WorldCover",
+  "tasks": [
+    {
+      "batch": 1,
+      "rows": 5000,
+      "description": "firewatch_worldcover_batch_01",
+      "task_id": "NMPUPA3UGG6G2PJ7LDD2YWE2"
+    },
+    {
+      "batch": 2,
+      "rows": 5000,
+      "description": "firewatch_worldcover_batch_02",
+      "task_id": "KGHSWDNZIE65TGBGHRIE3SS6"
+    },
+    {
+      "batch": 3,
+      "rows": 5000,
+      "description": "firewatch_worldcover_batch_03",
+      "task_id": "WQHCFIYZQNJ462TRCKNANPPO"
+    },
+    {
+      "batch": 4,
+      "rows": 5000,
+      "description": "firewatch_worldcover_batch_04",
+      "task_id": "JBZBN44M5HYLT2ST3JS2RBFY"
+    }
+  ],
+  "class_reference": {
+    "10": "Tree cover",
+    "20": "Shrubland",
+    "30": "Grassland",
+    "40": "Cropland",
+    "50": "Built-up",
+    "60": "Bare / sparse vegetation",
+    "70": "Snow and ice",
+    "80": "Permanent water bodies",
+    "90": "Herbaceous wetland",
+    "95": "Mangroves",
+    "100": "Moss and lichen"
+  },
+  "methodology": {
+    "point_class": "WorldCover class at the FIRMS observation coordinate.",
+    "mode_100m": "Dominant WorldCover class within 100 metres.",
+    "fractions_100m": "Fractional land-cover composition within 100 metres.",
+    "role": "External land-cover label/reference evidence. Not automatically converted into final source class."
+  },
+  "important_limitations": [
+    "WorldCover Built-up class does not specifically identify industrial facilities.",
+    "Vegetation land cover does not by itself prove that a FIRMS thermal anomaly is a natural vegetation fire.",
+    "WorldCover 2021 is a static reference used for observations from 2022-2024."
+  ],
+  "final_labels_assigned": false,
+  "holdout_2025_accessed": false
+}

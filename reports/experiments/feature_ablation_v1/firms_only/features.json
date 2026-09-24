@@ -1,0 +1,16 @@
+[
+  "brightness",
+  "bright_t31",
+  "frp",
+  "scan",
+  "track",
+  "confidence_code",
+  "hour",
+  "month",
+  "brightness_t31_delta",
+  "log_frp",
+  "hour_sin",
+  "hour_cos",
+  "month_sin",
+  "month_cos"
+]

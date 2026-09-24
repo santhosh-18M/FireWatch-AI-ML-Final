@@ -1,0 +1,51 @@
+{
+  "version": "v2_empty_collection_safe",
+  "project": "firewatch-ai-sih",
+  "input_file": "D:\\FireWatch_ML_Final\\data\\satellite\\sentinel_sampling_2022_2024.parquet",
+  "batch_size": 500,
+  "random_state": 42,
+  "dataset": "COPERNICUS/S2_SR_HARMONIZED",
+  "lookback_days": 14,
+  "future_imagery_allowed": false,
+  "max_scene_cloud_percentage": 80,
+  "cloud_mask": "Sentinel-2 SCL",
+  "buffer_meters": 100,
+  "reduce_scale_meters": 20,
+  "bands": [
+    "B4",
+    "B8",
+    "B11",
+    "B12"
+  ],
+  "indices": [
+    "NDVI",
+    "NBR",
+    "NDMI"
+  ],
+  "missing_data_policy": {
+    "no_scene": "Use fully masked fallback image. No spectral values are fabricated.",
+    "scene_but_no_valid_pixels": "Satellite availability is false and spectral values remain missing.",
+    "zero_fill": false
+  },
+  "export": {
+    "description": "firewatch_sentinel_validation_500_v2",
+    "drive_folder": "FireWatch_Sentinel",
+    "filename_prefix": "firewatch_sentinel_validation_500_v2",
+    "format": "CSV"
+  },
+  "task": {
+    "id": "VM2C4REG4QAMW2X64JVG5IOB",
+    "state": "READY"
+  },
+  "notes": [
+    "This is a 500-observation validation batch before scaling to the complete 20,000-observation satellite sample.",
+    "The same random seed as the failed V1 batch is used so the same observations are tested.",
+    "Sentinel imagery is restricted to the 14 days at or before each FIRMS event.",
+    "SCL masking removes cloud, shadow, cirrus, snow and invalid pixels.",
+    "B4/B8/B11/B12 are converted to reflectance using the 0.0001 scale.",
+    "No-scene cases use a fully masked fallback image containing the expected band names.",
+    "The fallback does not fabricate reflectance or spectral-index values.",
+    "Satellite evidence is contextual evidence, not a fire label.",
+    "2025 FIRMS holdout was not accessed."
+  ]
+}

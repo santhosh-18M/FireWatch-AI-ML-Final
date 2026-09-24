@@ -1,0 +1,42 @@
+{
+  "stage": "india_powerplant_reference_build",
+  "source": "World Resources Institute",
+  "dataset": "Global Power Plant Database",
+  "version": "1.3.0",
+  "global_rows": 34936,
+  "india_rows": 1589,
+  "valid_coordinate_rows": 1589,
+  "thermal_industrial_references": 397,
+  "fuel_distribution": {
+    "Solar": 851,
+    "Coal": 253,
+    "Hydro": 233,
+    "Wind": 108,
+    "Gas": 68,
+    "Biomass": 50,
+    "Oil": 17,
+    "Nuclear": 9
+  },
+  "thermal_fuel_distribution": {
+    "Coal": 253,
+    "Gas": 68,
+    "Biomass": 50,
+    "Oil": 17,
+    "Nuclear": 9
+  },
+  "thermal_reference_fuels": [
+    "Biomass",
+    "Coal",
+    "Gas",
+    "Nuclear",
+    "Oil"
+  ],
+  "excluded_as_thermal_anchor": [
+    "Solar",
+    "Wind",
+    "Hydro"
+  ],
+  "interpretation": "Thermal-reference membership indicates independent industrial power-generation context. It does not prove that a nearby FIRMS observation was caused by the plant or represents an industrial fire.",
+  "labels_created": false,
+  "holdout_2025_accessed": false
+}

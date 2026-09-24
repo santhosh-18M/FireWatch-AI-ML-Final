@@ -1,0 +1,85 @@
+{
+  "pipeline": "FireWatch Sentinel full extraction",
+  "version": "validated_v2_method",
+  "project": "firewatch-ai-sih",
+  "source_file": "D:\\FireWatch_ML_Final\\data\\satellite\\sentinel_sampling_2022_2024.parquet",
+  "total_observations": 20000,
+  "batch_size": 5000,
+  "number_of_batches": 4,
+  "dataset": "COPERNICUS/S2_SR_HARMONIZED",
+  "lookback_days": 14,
+  "future_imagery_allowed": false,
+  "scene_cloud_prefilter_percentage": 80,
+  "pixel_mask": "Sentinel-2 SCL",
+  "buffer_meters": 100,
+  "reduce_scale_meters": 20,
+  "composite": "median of valid past-window scenes",
+  "bands": [
+    "B4",
+    "B8",
+    "B11",
+    "B12"
+  ],
+  "indices": [
+    "NDVI",
+    "NBR",
+    "NDMI"
+  ],
+  "missing_data_policy": {
+    "no_scene": "fully masked fallback",
+    "scene_without_valid_pixels": "missing spectral evidence",
+    "zero_fill": false
+  },
+  "export_folder": "FireWatch_Sentinel_Full",
+  "tasks": [
+    {
+      "batch": 1,
+      "rows": 5000,
+      "first_export_row": 0,
+      "last_export_row": 4999,
+      "description": "firewatch_sentinel_full_batch_01",
+      "filename": "firewatch_sentinel_full_batch_01.csv",
+      "task_id": "BE7X6SYD3JIFCV6V4SXFVXKB",
+      "initial_state": "READY"
+    },
+    {
+      "batch": 2,
+      "rows": 5000,
+      "first_export_row": 5000,
+      "last_export_row": 9999,
+      "description": "firewatch_sentinel_full_batch_02",
+      "filename": "firewatch_sentinel_full_batch_02.csv",
+      "task_id": "SVQUHVTT5RJFLPGHFTBNBFH2",
+      "initial_state": "READY"
+    },
+    {
+      "batch": 3,
+      "rows": 5000,
+      "first_export_row": 10000,
+      "last_export_row": 14999,
+      "description": "firewatch_sentinel_full_batch_03",
+      "filename": "firewatch_sentinel_full_batch_03.csv",
+      "task_id": "QOQGSRA3ZYLG5VZV7GFDXQX3",
+      "initial_state": "READY"
+    },
+    {
+      "batch": 4,
+      "rows": 5000,
+      "first_export_row": 15000,
+      "last_export_row": 19999,
+      "description": "firewatch_sentinel_full_batch_04",
+      "filename": "firewatch_sentinel_full_batch_04.csv",
+      "task_id": "DJXTXCO5A2XV6NXCEQWSA3Q7",
+      "initial_state": "READY"
+    }
+  ],
+  "methodology_notes": [
+    "Methodology is unchanged from the validated 500-point V2 extraction.",
+    "The 20,000-observation sample is partitioned deterministically into four non-overlapping 5,000-row batches.",
+    "Spectral features represent a past-14-day cloud-masked Sentinel-2 median composite.",
+    "Latest scene metadata describes the latest candidate scene in the search window and should not be interpreted as the sole image used to generate the composite.",
+    "Satellite evidence is contextual evidence and does not itself constitute a fire label.",
+    "Unavailable satellite evidence remains explicitly missing.",
+    "2025 FIRMS holdout was not accessed."
+  ]
+}

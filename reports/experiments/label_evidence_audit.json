@@ -1,0 +1,44 @@
+{
+  "stage": "label_evidence_only",
+  "final_labels_assigned": false,
+  "rows": 20000,
+  "unique_observation_ids": 20000,
+  "satellite_evidence_available": 19444,
+  "osm_relation_1_5km": {
+    "neither": 13592,
+    "industrial_only": 3017,
+    "vegetation_only": 2628,
+    "mixed": 763
+  },
+  "osm_relation_3km": {
+    "neither": 8217,
+    "vegetation_only": 4600,
+    "industrial_only": 3845,
+    "mixed": 3338
+  },
+  "temporal_evidence_groups": {
+    "no_prior": 8701,
+    "limited_prior": 4562,
+    "repeated_low_active_days": 3706,
+    "high_recurrence": 3031
+  },
+  "review_candidate_rows": 400,
+  "source_classes_planned": [
+    "INDUSTRIAL_FIRE_CANDIDATE",
+    "NATURAL_VEGETATION_FIRE",
+    "OTHER_UNCERTAIN"
+  ],
+  "temporal_status_separate": true,
+  "planned_temporal_status": [
+    "EPISODIC",
+    "RECURRENT",
+    "PERSISTENT"
+  ],
+  "label_quality_scheme": {
+    "A": "independently verified/reviewed",
+    "B": "high-confidence evidence with documented provenance",
+    "C": "ambiguous or insufficient evidence"
+  },
+  "methodological_warning": "OSM, temporal and Sentinel evidence are not automatically converted into final labels. Using a predictor to deterministically create the target and then evaluating the model on that same predictor would create circularity.",
+  "holdout_2025_accessed": false
+}

@@ -1,0 +1,51 @@
+{
+  "stage": "2025_final_evaluation_sampling",
+  "source_rows": 646376,
+  "target_sample_size": 20000,
+  "actual_sample_size": 20000,
+  "random_state": 42,
+  "grid_size_degrees": 0.25,
+  "source_geographic_cells": 4344,
+  "sample_geographic_cells": 4344,
+  "geographic_cell_coverage_percentage": 100.0,
+  "frp_threshold_source": "D:\\FireWatch_ML_Final\\reports\\experiments\\satellite_sampling_summary.json",
+  "frp_sampling_thresholds": {
+    "q50": 3.5799999237060547,
+    "q90": 11.119999885559082,
+    "q95": 16.799999237060547,
+    "q99": 49.459999084472656
+  },
+  "sample_context_distribution": {
+    "no_close_context": 8703,
+    "vegetation_context": 4629,
+    "strong_industrial_context": 3670,
+    "mixed_context": 2998
+  },
+  "sample_temporal_distribution": {
+    "no_prior": 9023,
+    "limited_prior": 4758,
+    "repeated_low_active_days": 3418,
+    "high_recurrence": 2801
+  },
+  "sample_frp_distribution": {
+    "low": 7412,
+    "moderate": 6383,
+    "high": 2684,
+    "very_high": 2324,
+    "extreme": 1197
+  },
+  "sampling_reason_distribution": {
+    "evidence_stratum": 10567,
+    "diversity_fill": 5090,
+    "geographic_coverage": 4343
+  },
+  "model_used": false,
+  "labels_generated": false,
+  "sampling_policy_changed": false,
+  "notes": [
+    "Development FRP thresholds were reused; 2025 quantiles were not used to redefine sampling strata.",
+    "The development sampler included year as a stratum dimension because it covered 2022-2024. Year is constant for the 2025 holdout and is therefore redundant.",
+    "OSM context is used only for sampling diversity here, not for label generation.",
+    "The frozen source classifier has not been executed."
+  ]
+}

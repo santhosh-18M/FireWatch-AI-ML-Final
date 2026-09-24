@@ -1,0 +1,57 @@
+{
+  "stage": "combined_independent_industrial_matching",
+  "development_observations": 20000,
+  "oil_gas_references": 6,
+  "thermal_power_references": 397,
+  "combined_references": 403,
+  "duplicate_coordinate_keys": 11,
+  "distance_km": {
+    "minimum": 0.04005151157587274,
+    "median": 53.59599638759735,
+    "mean": 62.18193738873921,
+    "p90": 121.31824143086713,
+    "p95": 148.53900875600957,
+    "p99": 202.8370664955264
+  },
+  "threshold_coverage": {
+    "0.5": {
+      "count": 67,
+      "percentage": 0.335
+    },
+    "1.0": {
+      "count": 199,
+      "percentage": 0.9950000000000001
+    },
+    "2.0": {
+      "count": 401,
+      "percentage": 2.005
+    },
+    "3.0": {
+      "count": 576,
+      "percentage": 2.88
+    },
+    "5.0": {
+      "count": 833,
+      "percentage": 4.165
+    },
+    "10.0": {
+      "count": 1848,
+      "percentage": 9.24
+    },
+    "25.0": {
+      "count": 4376,
+      "percentage": 21.88
+    }
+  },
+  "methodology": {
+    "distance": "Haversine great-circle distance",
+    "spatial_index": "BallTree",
+    "industrial_sources": [
+      "GEM Global Oil and Gas Extraction Tracker",
+      "WRI Global Power Plant Database v1.3.0"
+    ],
+    "label_created": false,
+    "interpretation": "Spatial proximity is independent industrial-context evidence and does not prove FIRMS anomaly cause."
+  },
+  "holdout_2025_accessed": false
+}

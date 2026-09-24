@@ -1,0 +1,17 @@
+{
+  "experiment": "firms_temporal_osm",
+  "feature_count": 26,
+  "accuracy": 0.8547717842323651,
+  "balanced_accuracy": 0.6709175553580912,
+  "macro_f1": 0.6985537903683503,
+  "industrial_precision": 0.6296296296296297,
+  "industrial_recall": 0.2982456140350877,
+  "industrial_f1": 0.40476190476190477,
+  "natural_precision": 0.9081761006289308,
+  "natural_recall": 0.9280205655526992,
+  "natural_f1": 0.9179910998092816,
+  "other_precision": 0.7597911227154047,
+  "other_recall": 0.7864864864864864,
+  "other_f1": 0.7729083665338645,
+  "training_seconds": 7.766904599999862
+}

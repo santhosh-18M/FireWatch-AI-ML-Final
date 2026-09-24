@@ -1,0 +1,35 @@
+{
+  "stage": "source_label_construction_v1",
+  "rows": 20000,
+  "source_classes": {
+    "natural_vegetation_fire": 17008,
+    "other_uncertain": 2591,
+    "industrial_fire_candidate": 401
+  },
+  "label_quality": {
+    "B_STRONG_WEAK_LABEL": 17210,
+    "C_AMBIGUOUS": 2591,
+    "B_HIGH_CONFIDENCE_WEAK_LABEL": 199
+  },
+  "temporal_status": {
+    "EPISODIC": 13263,
+    "RECURRENT": 3706,
+    "PERSISTENT": 3031
+  },
+  "industrial_vegetation_conflicts": 97,
+  "industrial_2_to_3km_review_rows": 175,
+  "review_file_rows": 1056,
+  "policy": {
+    "industrial": "Independent industrial reference <=2 km.",
+    "industrial_high_confidence_weak": "Independent industrial reference <=1 km.",
+    "natural": "WorldCover point and dominant 100m both vegetation/agriculture and no independent industrial reference <=5 km.",
+    "other_uncertain": "Insufficient/conflicting evidence or industrial reference only in 2-3 km review band.",
+    "osm_used_to_create_label": false,
+    "sentinel_used_to_create_label": false,
+    "temporal_recurrence_used_to_create_source_label": false
+  },
+  "worldcover_note": "ESA WorldCover describes land cover, not the confirmed cause of a thermal anomaly.",
+  "industrial_reference_note": "Facility proximity provides industrial context but does not independently prove an industrial fire.",
+  "verified_A_labels": 0,
+  "holdout_2025_accessed": false
+}

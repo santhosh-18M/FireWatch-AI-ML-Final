@@ -1,0 +1,36 @@
+{
+  "stage": "2025_causal_temporal_features",
+  "rows": 646376,
+  "boundary_history_rows": 42286,
+  "boundary_history_start": "2024-12-02 07:03:00",
+  "boundary_history_end": "2024-12-31 20:32:00",
+  "first_2025_timestamp": "2025-01-01 06:01:00",
+  "radius_km": 1.0,
+  "maximum_history_days": 30,
+  "strictly_earlier_only": true,
+  "current_observation_excluded": true,
+  "future_observations_excluded": true,
+  "rows_with_prior_detection_30d": 299580,
+  "percent_with_prior_detection_30d": 46.34763666967833,
+  "early_2025_rows": 37553,
+  "early_2025_rows_with_history": 18890,
+  "early_2025_percent_with_history": 50.302239501504545,
+  "detections_30d": {
+    "mean": 10.56382353305197,
+    "median": 0.0,
+    "p90": 23.0,
+    "p95": 75.0,
+    "p99": 181.0,
+    "max": 499
+  },
+  "distinct_active_days_30d": {
+    "mean": 3.2373494684208572,
+    "median": 0.0,
+    "p95": 25.0,
+    "p99": 30.0,
+    "max": 31
+  },
+  "model_used": false,
+  "labels_generated": false,
+  "feature_policy_changed": false
+}

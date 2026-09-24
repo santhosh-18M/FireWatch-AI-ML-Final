@@ -1,0 +1,89 @@
+{
+  "model_version": "source_classifier_v1_final",
+  "architecture": "FIRMS + causal temporal + OSM",
+  "feature_count": 26,
+  "features": [
+    "brightness",
+    "bright_t31",
+    "frp",
+    "scan",
+    "track",
+    "confidence_code",
+    "hour",
+    "month",
+    "brightness_t31_delta",
+    "log_frp",
+    "hour_sin",
+    "hour_cos",
+    "month_sin",
+    "month_cos",
+    "detections_3d",
+    "detections_7d",
+    "detections_10d",
+    "detections_30d",
+    "distinct_active_days_30d",
+    "frp_ratio_to_history",
+    "active_days_fraction_30d",
+    "distance_to_strong_industrial_km",
+    "distance_to_supporting_industrial_km",
+    "distance_to_infrastructure_km",
+    "distance_to_vegetation_km",
+    "strong_industrial_vs_vegetation_distance_km"
+  ],
+  "feature_groups": {
+    "firms": [
+      "brightness",
+      "bright_t31",
+      "frp",
+      "scan",
+      "track",
+      "confidence_code",
+      "hour",
+      "month",
+      "brightness_t31_delta",
+      "log_frp",
+      "hour_sin",
+      "hour_cos",
+      "month_sin",
+      "month_cos"
+    ],
+    "temporal": [
+      "detections_3d",
+      "detections_7d",
+      "detections_10d",
+      "detections_30d",
+      "distinct_active_days_30d",
+      "frp_ratio_to_history",
+      "active_days_fraction_30d"
+    ],
+    "osm": [
+      "distance_to_strong_industrial_km",
+      "distance_to_supporting_industrial_km",
+      "distance_to_infrastructure_km",
+      "distance_to_vegetation_km",
+      "strong_industrial_vs_vegetation_distance_km"
+    ]
+  },
+  "excluded_from_classifier": [
+    "Sentinel spectral features",
+    "WorldCover label evidence",
+    "WRI/GEM label-generating distances",
+    "latitude",
+    "longitude",
+    "temporal_status"
+  ],
+  "classes": [
+    "industrial_fire_candidate",
+    "natural_vegetation_fire",
+    "other_uncertain"
+  ],
+  "catboost": {
+    "iterations": 900,
+    "depth": 7,
+    "learning_rate": 0.025,
+    "l2_leaf_reg": 5,
+    "random_strength": 1,
+    "random_seed": 42
+  },
+  "calibration": "Multinomial logistic regression on log CatBoost probabilities"
+}

@@ -1,0 +1,239 @@
+{
+  "stage": "2025_worldcover_export",
+  "input_file": "D:\\FireWatch_ML_Final\\data\\processed\\holdout_2025\\evaluation_sample_2025.parquet",
+  "input_rows": 20000,
+  "earth_engine_project": "firewatch-ai-sih",
+  "dataset": "ESA/WorldCover/v200",
+  "dataset_version": "2021_v200",
+  "band": "Map",
+  "buffer_meters": 100,
+  "scale_meters": 10,
+  "batch_size": 1000,
+  "number_of_batches": 20,
+  "submitted_rows": 20000,
+  "drive_folder": "FireWatch_WorldCover_2025",
+  "worldcover_classes": {
+    "10": "Tree cover",
+    "20": "Shrubland",
+    "30": "Grassland",
+    "40": "Cropland",
+    "50": "Built-up",
+    "60": "Bare / sparse vegetation",
+    "70": "Snow and ice",
+    "80": "Permanent water bodies",
+    "90": "Herbaceous wetland",
+    "95": "Mangroves",
+    "100": "Moss and lichen"
+  },
+  "tasks": [
+    {
+      "batch_number": 1,
+      "start_index": 0,
+      "end_index_exclusive": 1000,
+      "row_count": 1000,
+      "task_id": "4PSAIXK6HU6V7GN7F6P4753O",
+      "description": "firewatch_worldcover_2025_batch_01",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_01"
+    },
+    {
+      "batch_number": 2,
+      "start_index": 1000,
+      "end_index_exclusive": 2000,
+      "row_count": 1000,
+      "task_id": "VNZMMXWKMUKYZVAWAEYHFGLF",
+      "description": "firewatch_worldcover_2025_batch_02",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_02"
+    },
+    {
+      "batch_number": 3,
+      "start_index": 2000,
+      "end_index_exclusive": 3000,
+      "row_count": 1000,
+      "task_id": "GOZ5PKMIRFDLPJDZY4WZMBQK",
+      "description": "firewatch_worldcover_2025_batch_03",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_03"
+    },
+    {
+      "batch_number": 4,
+      "start_index": 3000,
+      "end_index_exclusive": 4000,
+      "row_count": 1000,
+      "task_id": "MS72VAIX5PGPA246UC6JEKZX",
+      "description": "firewatch_worldcover_2025_batch_04",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_04"
+    },
+    {
+      "batch_number": 5,
+      "start_index": 4000,
+      "end_index_exclusive": 5000,
+      "row_count": 1000,
+      "task_id": "UK7OVOA2KK7RTODPK5MV3EF3",
+      "description": "firewatch_worldcover_2025_batch_05",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_05"
+    },
+    {
+      "batch_number": 6,
+      "start_index": 5000,
+      "end_index_exclusive": 6000,
+      "row_count": 1000,
+      "task_id": "72ACTEQIPCYRSACJV55DSSLK",
+      "description": "firewatch_worldcover_2025_batch_06",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_06"
+    },
+    {
+      "batch_number": 7,
+      "start_index": 6000,
+      "end_index_exclusive": 7000,
+      "row_count": 1000,
+      "task_id": "KK7CYC2ISAUO4MVGGO3ZI3NG",
+      "description": "firewatch_worldcover_2025_batch_07",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_07"
+    },
+    {
+      "batch_number": 8,
+      "start_index": 7000,
+      "end_index_exclusive": 8000,
+      "row_count": 1000,
+      "task_id": "IU6BPIGNT6TCDM7QSGZMB2JA",
+      "description": "firewatch_worldcover_2025_batch_08",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_08"
+    },
+    {
+      "batch_number": 9,
+      "start_index": 8000,
+      "end_index_exclusive": 9000,
+      "row_count": 1000,
+      "task_id": "3YFZMLFN7G4ATZIXNVOVCEVL",
+      "description": "firewatch_worldcover_2025_batch_09",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_09"
+    },
+    {
+      "batch_number": 10,
+      "start_index": 9000,
+      "end_index_exclusive": 10000,
+      "row_count": 1000,
+      "task_id": "FDXUVPTAZEIJ553SLONN2X3W",
+      "description": "firewatch_worldcover_2025_batch_10",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_10"
+    },
+    {
+      "batch_number": 11,
+      "start_index": 10000,
+      "end_index_exclusive": 11000,
+      "row_count": 1000,
+      "task_id": "2CLP43KVPAJSR5RRIPQP34TF",
+      "description": "firewatch_worldcover_2025_batch_11",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_11"
+    },
+    {
+      "batch_number": 12,
+      "start_index": 11000,
+      "end_index_exclusive": 12000,
+      "row_count": 1000,
+      "task_id": "5YMCFFGXV2FPKPTSDKRLXWHM",
+      "description": "firewatch_worldcover_2025_batch_12",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_12"
+    },
+    {
+      "batch_number": 13,
+      "start_index": 12000,
+      "end_index_exclusive": 13000,
+      "row_count": 1000,
+      "task_id": "IC3KHOJ5TTCJXJTJPKOND53B",
+      "description": "firewatch_worldcover_2025_batch_13",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_13"
+    },
+    {
+      "batch_number": 14,
+      "start_index": 13000,
+      "end_index_exclusive": 14000,
+      "row_count": 1000,
+      "task_id": "MPFTJQEBUW53MK7WZPDKHIZY",
+      "description": "firewatch_worldcover_2025_batch_14",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_14"
+    },
+    {
+      "batch_number": 15,
+      "start_index": 14000,
+      "end_index_exclusive": 15000,
+      "row_count": 1000,
+      "task_id": "ZWBA3EIFIVUVLQM2HWZS2JR6",
+      "description": "firewatch_worldcover_2025_batch_15",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_15"
+    },
+    {
+      "batch_number": 16,
+      "start_index": 15000,
+      "end_index_exclusive": 16000,
+      "row_count": 1000,
+      "task_id": "2X4XXQ63YNYDJTBOJ2FHMDPV",
+      "description": "firewatch_worldcover_2025_batch_16",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_16"
+    },
+    {
+      "batch_number": 17,
+      "start_index": 16000,
+      "end_index_exclusive": 17000,
+      "row_count": 1000,
+      "task_id": "65KAXEWC242JUPMYUJNYYMXX",
+      "description": "firewatch_worldcover_2025_batch_17",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_17"
+    },
+    {
+      "batch_number": 18,
+      "start_index": 17000,
+      "end_index_exclusive": 18000,
+      "row_count": 1000,
+      "task_id": "ZWQWBHQCGJXJAH6AMAY6BLR5",
+      "description": "firewatch_worldcover_2025_batch_18",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_18"
+    },
+    {
+      "batch_number": 19,
+      "start_index": 18000,
+      "end_index_exclusive": 19000,
+      "row_count": 1000,
+      "task_id": "4AKQSSAYXFKCPXR4ILXJQPKY",
+      "description": "firewatch_worldcover_2025_batch_19",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_19"
+    },
+    {
+      "batch_number": 20,
+      "start_index": 19000,
+      "end_index_exclusive": 20000,
+      "row_count": 1000,
+      "task_id": "TXXB2YS6Y7WMQJLZKWVH6WNR",
+      "description": "firewatch_worldcover_2025_batch_20",
+      "drive_folder": "FireWatch_WorldCover_2025",
+      "file_prefix": "firewatch_worldcover_2025_batch_20"
+    }
+  ],
+  "model_used": false,
+  "source_labels_generated": false,
+  "notes": [
+    "WorldCover is independent land-cover reference evidence.",
+    "WorldCover 2021 is static reference evidence and is not proof of the cause of a 2025 FIRMS anomaly.",
+    "WorldCover evidence is used by the frozen V1 weak-label policy.",
+    "OSM evidence is not used to create the frozen source labels.",
+    "The frozen classifier has not been executed."
+  ]
+}

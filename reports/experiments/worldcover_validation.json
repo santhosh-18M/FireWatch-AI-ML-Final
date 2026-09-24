@@ -1,0 +1,74 @@
+{
+  "stage": "worldcover_validation_corrected",
+  "source": "ESA WorldCover v200",
+  "reference_year": 2021,
+  "rows": 20000,
+  "duplicate_ids": 0,
+  "missing_source_ids": 0,
+  "unexpected_ids": 0,
+  "coordinate_mismatches": 0,
+  "evidence_available": 20000,
+  "evidence_missing": 0,
+  "invalid_point_codes": [],
+  "invalid_fraction_rows": 0,
+  "selected_fraction_sum_over_one": 0,
+  "point_class_distribution": {
+    "Cropland": 7837,
+    "Tree cover": 6808,
+    "Grassland": 2105,
+    "Built-up": 1157,
+    "Bare / sparse vegetation": 1108,
+    "Shrubland": 818,
+    "Permanent water bodies": 146,
+    "Herbaceous wetland": 14,
+    "Moss and lichen": 6,
+    "Snow and ice": 1
+  },
+  "derived_dominant_100m_distribution": {
+    "Cropland": 8103,
+    "Tree cover": 6963,
+    "Grassland": 1811,
+    "Built-up": 1201,
+    "Bare / sparse vegetation": 1086,
+    "Shrubland": 700,
+    "Permanent water bodies": 128,
+    "Herbaceous wetland": 8
+  },
+  "mean_fractions_100m": {
+    "worldcover_tree_fraction_100m": 0.3446228991108916,
+    "worldcover_shrub_fraction_100m": 0.03980539060484661,
+    "worldcover_grass_fraction_100m": 0.10358237310613293,
+    "worldcover_cropland_fraction_100m": 0.39155770783345717,
+    "worldcover_built_fraction_100m": 0.05704185059157382,
+    "worldcover_bare_fraction_100m": 0.05479004477866622,
+    "worldcover_water_fraction_100m": 0.007754890485193373,
+    "worldcover_wetland_fraction_100m": 0.0005325625562841962,
+    "worldcover_mangrove_fraction_100m": 5.930442155838276e-05
+  },
+  "raw_ee_mode_note": "Raw reduceRegion mode values are retained for provenance but are not used as the validated categorical dominant class.",
+  "dominant_class_method": "Class having maximum exported WorldCover fraction within 100 m. Point class used only as fallback when fraction evidence is absent.",
+  "batch_summary": [
+    {
+      "batch": 1,
+      "file": "firewatch_worldcover_batch_01.csv",
+      "rows": 5000
+    },
+    {
+      "batch": 2,
+      "file": "firewatch_worldcover_batch_02.csv",
+      "rows": 5000
+    },
+    {
+      "batch": 3,
+      "file": "firewatch_worldcover_batch_03.csv",
+      "rows": 5000
+    },
+    {
+      "batch": 4,
+      "file": "firewatch_worldcover_batch_04.csv",
+      "rows": 5000
+    }
+  ],
+  "final_source_labels_assigned": false,
+  "holdout_2025_accessed": false
+}

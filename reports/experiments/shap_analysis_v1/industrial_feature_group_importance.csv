@@ -1,0 +1,5 @@
+feature_group,feature_count,industrial_total_mean_abs_shap,importance_share
+OSM context,5,2.262599938050436,0.6883032254596279
+Sentinel satellite,8,0.41561970987729335,0.12643524914069848
+FIRMS thermal/time,14,0.39616386519110125,0.12051660642072812
+Historical temporal,7,0.2128303983655167,0.06474491897894553

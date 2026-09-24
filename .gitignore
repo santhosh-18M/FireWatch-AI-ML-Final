@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Large / generated datasets
+data/raw/
+data/processed/
+data/osm/
+data/labels/
+data/satellite/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temporary files
+*.log
+*.tmp
+.DS_Store

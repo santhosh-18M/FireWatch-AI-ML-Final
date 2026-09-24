@@ -1,0 +1,2 @@
+observation_id,latitude,longitude,spatial_group,actual_class_id,actual_class,predicted_class_id,predicted_class,correct,prob_industrial_fire_candidate,prob_natural_vegetation_fire,prob_other_uncertain,max_probability
+FW_01129842,19.96279,79.33357,39_158,2,other_uncertain,0,industrial_fire_candidate,False,0.5224916391581323,0.0160173247722621,0.4614910360696057,0.5224916391581323

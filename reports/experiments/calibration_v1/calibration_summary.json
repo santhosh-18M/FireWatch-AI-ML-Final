@@ -1,0 +1,60 @@
+{
+  "model": "CatBoost slow_boost",
+  "calibration_method": "multinomial logistic regression on log class probabilities",
+  "calibration_rows": 1172,
+  "raw_metrics_on_calibration": {
+    "accuracy": 0.8583617747440273,
+    "balanced_accuracy": 0.7113734958308929,
+    "macro_f1": 0.7190205872090125,
+    "log_loss": 0.3441252734343226,
+    "multiclass_brier": 0.20164304229154972,
+    "industrial_precision": 0.47058823529411764,
+    "industrial_recall": 0.42105263157894735,
+    "industrial_f1": 0.4444444444444444,
+    "natural_precision": 0.9146666666666666,
+    "natural_recall": 0.9320652173913043,
+    "natural_f1": 0.9232839838492598,
+    "other_precision": 0.7978436657681941,
+    "other_recall": 0.7810026385224275,
+    "other_f1": 0.7893333333333333,
+    "support": {
+      "industrial_fire_candidate": 57,
+      "natural_vegetation_fire": 736,
+      "other_uncertain": 379
+    }
+  },
+  "calibrated_apparent_metrics_on_calibration": {
+    "accuracy": 0.8660409556313993,
+    "balanced_accuracy": 0.6996910277155548,
+    "macro_f1": 0.7337060505094137,
+    "log_loss": 0.32730161261122115,
+    "multiclass_brier": 0.19321882503494964,
+    "industrial_precision": 0.7,
+    "industrial_recall": 0.3684210526315789,
+    "industrial_f1": 0.4827586206896552,
+    "natural_precision": 0.900516795865633,
+    "natural_recall": 0.9470108695652174,
+    "natural_f1": 0.9231788079470199,
+    "other_precision": 0.8070652173913043,
+    "other_recall": 0.783641160949868,
+    "other_f1": 0.7951807228915663,
+    "support": {
+      "industrial_fire_candidate": 57,
+      "natural_vegetation_fire": 736,
+      "other_uncertain": 379
+    }
+  },
+  "best_apparent_industrial_threshold": {
+    "threshold": 0.19,
+    "true_positive": 46.0,
+    "false_positive": 56.0,
+    "false_negative": 11.0,
+    "true_negative": 1059.0,
+    "precision": 0.45098039215686275,
+    "recall": 0.8070175438596491,
+    "f1": 0.5786163522012578,
+    "predicted_industrial": 102.0
+  },
+  "warning": "The calibrator was fitted on the calibration partition. Calibrated metrics on that same partition are apparent metrics, not independent final performance. Independent evaluation must use the locked 2025 holdout after the complete pipeline is frozen.",
+  "holdout_2025_used": false
+}

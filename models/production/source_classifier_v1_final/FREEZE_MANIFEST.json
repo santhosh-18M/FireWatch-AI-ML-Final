@@ -1,0 +1,24 @@
+{
+  "freeze_status": "LOCKED",
+  "model_version": "source_classifier_v1_final",
+  "feature_architecture": "FIRMS + causal temporal + OSM",
+  "feature_count": 26,
+  "model_family": "CatBoost",
+  "model_configuration": {
+    "iterations": 900,
+    "depth": 7,
+    "learning_rate": 0.025,
+    "l2_leaf_reg": 5,
+    "random_strength": 1,
+    "random_seed": 42
+  },
+  "development_complete": true,
+  "allowed_next_step": "Construct 2025 features using frozen rules and perform one-time temporal holdout evaluation.",
+  "prohibited_after_2025_inspection": [
+    "changing source labels based on 2025 results",
+    "changing model hyperparameters based on 2025 results",
+    "changing predictor set based on 2025 results",
+    "changing preprocessing based on 2025 results",
+    "retraining to improve reported 2025 score"
+  ]
+}

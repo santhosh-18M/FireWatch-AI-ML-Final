@@ -1,0 +1,80 @@
+{
+  "status": "FROZEN_BEFORE_2025",
+  "model_version": "source_classifier_v1_final",
+  "architecture": "FIRMS + causal temporal + OSM",
+  "feature_count": 26,
+  "validation_metrics": {
+    "accuracy": 0.8547717842323651,
+    "balanced_accuracy": 0.6709175553580912,
+    "macro_f1": 0.6985537903683503,
+    "log_loss": 0.4136880687348385,
+    "multiclass_brier": 0.23258896642785637,
+    "industrial_precision": 0.6296296296296297,
+    "industrial_recall": 0.2982456140350877,
+    "industrial_f1": 0.40476190476190477,
+    "natural_precision": 0.9081761006289308,
+    "natural_recall": 0.9280205655526992,
+    "natural_f1": 0.9179910998092816,
+    "other_precision": 0.7597911227154047,
+    "other_recall": 0.7864864864864864,
+    "other_f1": 0.7729083665338645,
+    "support": {
+      "industrial_fire_candidate": 57,
+      "natural_vegetation_fire": 778,
+      "other_uncertain": 370
+    }
+  },
+  "raw_calibration_metrics": {
+    "accuracy": 0.8481228668941979,
+    "balanced_accuracy": 0.7152981344177238,
+    "macro_f1": 0.7141110519692924,
+    "log_loss": 0.3849488987428546,
+    "multiclass_brier": 0.21994059372636907,
+    "industrial_precision": 0.4426229508196721,
+    "industrial_recall": 0.47368421052631576,
+    "industrial_f1": 0.4576271186440678,
+    "natural_precision": 0.9063324538258575,
+    "natural_recall": 0.9334239130434783,
+    "natural_f1": 0.9196787148594378,
+    "other_precision": 0.7932011331444759,
+    "other_recall": 0.7387862796833773,
+    "other_f1": 0.7650273224043715,
+    "support": {
+      "industrial_fire_candidate": 57,
+      "natural_vegetation_fire": 736,
+      "other_uncertain": 379
+    }
+  },
+  "apparent_calibrated_metrics": {
+    "accuracy": 0.871160409556314,
+    "balanced_accuracy": 0.7078034736855522,
+    "macro_f1": 0.7462527389685046,
+    "log_loss": 0.3639094041830181,
+    "multiclass_brier": 0.2069041175464635,
+    "industrial_precision": 0.7586206896551724,
+    "industrial_recall": 0.38596491228070173,
+    "industrial_f1": 0.5116279069767442,
+    "natural_precision": 0.8988476312419974,
+    "natural_recall": 0.9538043478260869,
+    "natural_f1": 0.9255108767303889,
+    "other_precision": 0.8204419889502762,
+    "other_recall": 0.783641160949868,
+    "other_f1": 0.8016194331983806,
+    "support": {
+      "industrial_fire_candidate": 57,
+      "natural_vegetation_fire": 736,
+      "other_uncertain": 379
+    }
+  },
+  "calibration_operating_point_diagnostic": {
+    "threshold": 0.27,
+    "precision": 0.48717948717948717,
+    "recall": 0.6666666666666666,
+    "f1": 0.5629629629629629,
+    "true_positive": 38,
+    "false_positive": 40,
+    "false_negative": 19
+  },
+  "important_warning": "Calibration-set calibrated metrics and threshold performance are apparent development metrics. Independent final evaluation is the locked 2025 temporal holdout.",
+  "holdout_2025_used": false
+}

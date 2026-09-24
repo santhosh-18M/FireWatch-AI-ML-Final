@@ -1,0 +1,17 @@
+{
+  "experiment": "deep_d8",
+  "accuracy": 0.8655601659751038,
+  "balanced_accuracy": 0.6524745012906291,
+  "macro_f1": 0.6681734931734932,
+  "weighted_f1": 0.8579105334499525,
+  "industrial_precision": 0.4782608695652174,
+  "industrial_recall": 0.19298245614035087,
+  "industrial_f1": 0.275,
+  "natural_precision": 0.9245524296675192,
+  "natural_recall": 0.929305912596401,
+  "natural_f1": 0.926923076923077,
+  "other_precision": 0.7725,
+  "other_recall": 0.8351351351351352,
+  "other_f1": 0.8025974025974026,
+  "training_seconds": 15.102723699999956
+}

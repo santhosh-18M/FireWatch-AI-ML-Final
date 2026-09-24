@@ -1,0 +1,17 @@
+{
+  "experiment": "randomized",
+  "accuracy": 0.8614107883817428,
+  "balanced_accuracy": 0.6557517604195997,
+  "macro_f1": 0.6711587987616161,
+  "weighted_f1": 0.8548656840593494,
+  "industrial_precision": 0.48,
+  "industrial_recall": 0.21052631578947367,
+  "industrial_f1": 0.2926829268292683,
+  "natural_precision": 0.9251612903225807,
+  "natural_recall": 0.9215938303341902,
+  "natural_f1": 0.9233741146168706,
+  "other_precision": 0.762962962962963,
+  "other_recall": 0.8351351351351352,
+  "other_f1": 0.7974193548387096,
+  "training_seconds": 9.61482860000001
+}

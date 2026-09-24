@@ -1,0 +1,17 @@
+{
+  "experiment": "firms_osm_sentinel",
+  "feature_count": 27,
+  "accuracy": 0.862240663900415,
+  "balanced_accuracy": 0.6547628537751661,
+  "macro_f1": 0.6690848996761593,
+  "industrial_precision": 0.4444444444444444,
+  "industrial_recall": 0.21052631578947367,
+  "industrial_f1": 0.2857142857142857,
+  "natural_precision": 0.9267352185089974,
+  "natural_recall": 0.9267352185089974,
+  "natural_f1": 0.9267352185089974,
+  "other_precision": 0.765,
+  "other_recall": 0.827027027027027,
+  "other_f1": 0.7948051948051948,
+  "training_seconds": 9.754569100000026
+}

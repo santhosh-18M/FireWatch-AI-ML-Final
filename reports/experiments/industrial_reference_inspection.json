@@ -1,0 +1,225 @@
+{
+  "files": [
+    {
+      "filename": "Global-Oil-and-Gas-Extraction-Tracker-March-2026.xlsx",
+      "suffix": ".xlsx",
+      "sheets": [
+        {
+          "source": "Global-Oil-and-Gas-Extraction-Tracker-March-2026.xlsx :: About",
+          "rows": 114,
+          "columns": 4,
+          "column_names": [
+            "Global Oil and Gas Extraction Tracker - March 2026",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3"
+          ],
+          "candidate_columns": [
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3"
+          ],
+          "sheet_name": "About"
+        },
+        {
+          "source": "Global-Oil-and-Gas-Extraction-Tracker-March-2026.xlsx :: Field-level main data",
+          "rows": 7673,
+          "columns": 27,
+          "column_names": [
+            "Unit ID",
+            "Unit Name",
+            "Unit name local script",
+            "Fuel type",
+            "Country/Area",
+            "Subnational unit",
+            "Production Type",
+            "Status",
+            "Status detail",
+            "Status year",
+            "Discovery year",
+            "FID Year",
+            "Production start year",
+            "Operator",
+            "Owner(s)",
+            "Parent(s)",
+            "Government unit ID",
+            "Wiki URL (project)",
+            "Wiki URL (field)",
+            "Name Other",
+            "Latitude",
+            "Longitude",
+            "Location accuracy",
+            "Onshore/Offshore",
+            "Field outline (WKT)",
+            "Basin",
+            "Block(s)"
+          ],
+          "candidate_columns": [
+            "Unit Name",
+            "Unit name local script",
+            "Fuel type",
+            "Country/Area",
+            "Production Type",
+            "Status",
+            "Status detail",
+            "Status year",
+            "Wiki URL (project)",
+            "Wiki URL (field)",
+            "Name Other",
+            "Latitude",
+            "Longitude",
+            "Location accuracy",
+            "Field outline (WKT)"
+          ],
+          "sheet_name": "Field-level main data"
+        },
+        {
+          "source": "Global-Oil-and-Gas-Extraction-Tracker-March-2026.xlsx :: Field-level reserves data",
+          "rows": 7060,
+          "columns": 10,
+          "column_names": [
+            "Unit ID",
+            "Unit Name",
+            "Country/Area",
+            "Fuel description",
+            "Reserves classification",
+            "Quantity",
+            "Units",
+            "Quantity (converted)",
+            "Units (converted)",
+            "Data Year"
+          ],
+          "candidate_columns": [
+            "Unit Name",
+            "Country/Area",
+            "Fuel description"
+          ],
+          "sheet_name": "Field-level reserves data"
+        },
+        {
+          "source": "Global-Oil-and-Gas-Extraction-Tracker-March-2026.xlsx :: Field-level production data",
+          "rows": 11834,
+          "columns": 9,
+          "column_names": [
+            "Unit ID",
+            "Unit Name",
+            "Country/Area",
+            "Fuel description",
+            "Quantity (original)",
+            "Units (original)",
+            "Quantity (converted)",
+            "Units (converted)",
+            "Data Year"
+          ],
+          "candidate_columns": [
+            "Unit Name",
+            "Country/Area",
+            "Fuel description"
+          ],
+          "sheet_name": "Field-level production data"
+        },
+        {
+          "source": "Global-Oil-and-Gas-Extraction-Tracker-March-2026.xlsx :: Project-level main data",
+          "rows": 359,
+          "columns": 28,
+          "column_names": [
+            "Project ID",
+            "Project Name",
+            "Project local script",
+            "Fuel type",
+            "Country/Area",
+            "Subnational unit",
+            "Production Type",
+            "Status",
+            "Status detail",
+            "Status year",
+            "Discovery year",
+            "FID Year",
+            "Production start year",
+            "Operator",
+            "Owner(s)",
+            "Parent(s)",
+            "Government unit ID",
+            "Units (list of IDs)",
+            "Wiki URL (project)",
+            "Name Other",
+            "Latitude",
+            "Longitude",
+            "Location accuracy",
+            "Project location type",
+            "Onshore/Offshore",
+            "Project outline (WKT)",
+            "Basin",
+            "Block(s)"
+          ],
+          "candidate_columns": [
+            "Project ID",
+            "Project Name",
+            "Project local script",
+            "Fuel type",
+            "Country/Area",
+            "Production Type",
+            "Status",
+            "Status detail",
+            "Status year",
+            "Wiki URL (project)",
+            "Name Other",
+            "Latitude",
+            "Longitude",
+            "Location accuracy",
+            "Project location type",
+            "Project outline (WKT)"
+          ],
+          "sheet_name": "Project-level main data"
+        },
+        {
+          "source": "Global-Oil-and-Gas-Extraction-Tracker-March-2026.xlsx :: Project-level reserves data ",
+          "rows": 431,
+          "columns": 8,
+          "column_names": [
+            "Project ID",
+            "Project Name",
+            "Country/Area",
+            "Fuel description",
+            "Reserves classification",
+            "Quantity (converted)",
+            "Units (converted)",
+            "Data source type"
+          ],
+          "candidate_columns": [
+            "Project ID",
+            "Project Name",
+            "Country/Area",
+            "Fuel description",
+            "Data source type"
+          ],
+          "sheet_name": "Project-level reserves data "
+        },
+        {
+          "source": "Global-Oil-and-Gas-Extraction-Tracker-March-2026.xlsx :: Project-level production data",
+          "rows": 331,
+          "columns": 7,
+          "column_names": [
+            "Project ID",
+            "Project Name",
+            "Country/Area",
+            "Fuel description",
+            "Quantity (converted)",
+            "Units (converted)",
+            "Data source type"
+          ],
+          "candidate_columns": [
+            "Project ID",
+            "Project Name",
+            "Country/Area",
+            "Fuel description",
+            "Data source type"
+          ],
+          "sheet_name": "Project-level production data"
+        }
+      ]
+    }
+  ],
+  "holdout_2025_accessed": false,
+  "labels_created": false
+}

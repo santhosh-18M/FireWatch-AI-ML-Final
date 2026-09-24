@@ -1,0 +1,17 @@
+{
+  "experiment": "firms_sentinel",
+  "feature_count": 22,
+  "accuracy": 0.833195020746888,
+  "balanced_accuracy": 0.5949663640097952,
+  "macro_f1": 0.5970347761426908,
+  "industrial_precision": 0.13333333333333333,
+  "industrial_recall": 0.10526315789473684,
+  "industrial_f1": 0.11764705882352941,
+  "natural_precision": 0.9065656565656566,
+  "natural_recall": 0.922879177377892,
+  "natural_f1": 0.9146496815286624,
+  "other_precision": 0.7608695652173914,
+  "other_recall": 0.7567567567567568,
+  "other_f1": 0.7588075880758808,
+  "training_seconds": 7.683367000000089
+}
